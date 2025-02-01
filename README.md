@@ -22,6 +22,8 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 
 Ponints to be Noted for logic:
 
-![alt text](image.png)
 
-![alt text](image-1.png)
+https://github.com/NityaK123/EMI-Calculator/blob/main/public/assets/emiOutPut.png 
+
+https://github.com/NityaK123/EMI-Calculator/blob/main/public/assets/loanCalculator.png
+
