@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box; /* Includes padding and border in width calculation */
+}
+
+.App {
+  text-align: center;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  background-color: rgb(19, 187, 72);
+  min-height: 100vh; /* Full height of the viewport */
+  padding: 20px;
+  width: 100%; /* Make sure it fills the width of the parent */
+  box-sizing: border-box; /* Ensures padding doesn't overflow the container */
+}
+
+form {
+  width: 100%; /* Ensure the form takes up full width of the container */
+  max-width: 600px; /* You can adjust this based on your preference */
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Style for the range input container */
+input[type="range"] {
+  -webkit-appearance: none;  /* Remove default appearance in Webkit browsers */
+  -moz-appearance: none;     /* Remove default appearance in Firefox */
+  appearance: none;          /* Remove default appearance in other browsers */
+  width: 100%;               /* Make the range fill the container */
+  height: 10px;              /* Set height for the track */
+  background: #ddd;          /* Default color for the track */
+  border-radius: 5px;        /* Optional: Round the edges of the track */
+}
+
+/* Style for the track (the part the thumb slides along) */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 10px;
+  background: #4caf50; /* Green color for the track */
+  border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 10px;
+  background: #4caf50; /* Green color for the track */
+  border-radius: 5px;
+}
+
+/* Style for the thumb (the draggable part of the slider) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default appearance */
+  appearance: none;
+  width: 20px;              /* Thumb size */
+  height: 20px;
+  background: #ff5722;      /* Orange color for the thumb */
+  border-radius: 50%;       /* Circular thumb */
+  cursor: pointer;          /* Pointer cursor when hovering over the thumb */
+  margin-top: -5px;         /* Adjust to center the thumb on the track */
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #ff5722; /* Orange color for the thumb */
+  border-radius: 50%;   /* Circular thumb */
+  cursor: pointer;
+}
+
+/* Optional: Change the color of the range when the user interacts with it */
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #45a049; /* Slightly darker green when focused */
+}
+
+input[type="range"]:focus::-moz-range-track {
+  background: #45a049; /* Slightly darker green when focused */
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  background: #ff5722; /* Keep thumb color when focused */
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  background: #ff5722; /* Keep thumb color when focused */
+}
