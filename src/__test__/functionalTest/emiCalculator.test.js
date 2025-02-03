@@ -1,4 +1,3 @@
-import {screen,render} from '@testing-library/react'
 import { calculateEmi } from '../../utils/calculateEmi'
 
 

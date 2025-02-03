@@ -41,7 +41,7 @@ const EmiPage = () => {
     return (
         <>
             <div className="container">
-                <h1>Emi Calculator</h1>
+                <h1>Emi Calculator </h1>
                 <Form>
                     <Form.Group>
                         <Form.Label>Total Cost Of Asset</Form.Label>

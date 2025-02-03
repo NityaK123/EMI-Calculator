@@ -34,7 +34,7 @@ export const calculateEmi = (data) => {
         emi = Math.round((loanAmount * interestRateMonthly * Math.pow(1 + interestRateMonthly, tenureMonths)) / (Math.pow(1 + interestRateMonthly, tenureMonths) - 1));
     } else {
         // EMI formula when interest rate is 0
-        emi = Math.round(loanAmount / tenureMonths);
+        emi = Math.round(loanAmount / tenureMonths); 
     }
     return { loanAmount, processingFee, totalPayAbleAmount, emi,error };
 }
